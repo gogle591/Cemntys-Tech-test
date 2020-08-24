@@ -147,7 +147,13 @@ data.loc[(data['time'] >= datetime.time(19,0,0)) & (data['time'] <datetime.time(
 # Transform the date into an integer representing this date:
 data['day']=data['day'].map(datetime.datetime.toordinal)
 
+# The new info() after modifications:
+
+print("\n Les nouvelles informations sur la dataframe: ")
+print(data.info())
+
 # The new head of the data set after the modifications:
+print("\nLe nouveau header est le suivant:")
 print(data.head())
 
 # The new corelation matrix and heatmap after the modifications:

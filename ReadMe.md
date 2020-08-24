@@ -132,6 +132,36 @@ Le jour pourra etre le meme, donc on peux le laisser comme il l'est, par contre 
 |  3 |  Midi | entre 11:00 et 15:00  |  
 |  4 |  Soir | entre 15:00 et 19:00 |  
 |  5 |  Deb nuit | entre 19:00 et 23:59 | 
+
+Le nouveau résultat de la fonction info() est le suivant: 
+
+    <class 'pandas.core.frame.DataFrame'>
+    RangeIndex: 1761 entries, 0 to 1760
+    Data columns (total 8 columns):
+     #   Column          Non-Null Count  Dtype  
+    ---  ------          --------------  -----  
+     0   index           1761 non-null   int64  
+     1   TIMESTAMP       1761 non-null   object 
+     2   deplacement     1761 non-null   float64
+     3   ensoleillement  1761 non-null   float64
+     4   temperature     1761 non-null   float64
+     5   day             1761 non-null   int64  
+     6   time            1761 non-null   object 
+     7   periode         1761 non-null   float64
+    dtypes: float64(4), int64(2), object(2)
+    memory usage: 110.2+ KB
+    None
+
+Et le nouveau header est le suivant: 
+
+     index            TIMESTAMP  deplacement  ensoleillement  temperature     day      time  periode
+    0      0  2020-03-14 00:01:22          1.3             0.0     8.381906  737498  00:01:22      0.0
+    1      1  2020-03-14 00:18:05          0.5             0.0     8.388235  737498  00:18:05      0.0
+    2      2  2020-03-14 00:35:17          1.8             0.0     8.397227  737498  00:35:17      0.0
+    3      4  2020-03-14 01:09:27          1.7             0.0     8.426197  737498  01:09:27      0.0
+    4      5  2020-03-14 01:26:24          1.7             0.0     8.440569  737498  01:26:24      0.0
+
+
  
 Après les nouvelles modifications, j'aurai le graphe de corrélation suivant: 
 
