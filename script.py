@@ -190,6 +190,7 @@ for i in range(0,len(data['periode'])):
         date = np.zeros(n) # New row of 0
         date[0] = data['periode'][i] # making the first information of periode at it value
         date[1] = data['day'][i] # the same for the day
+        date[2] = 10 # I supposed that the neutrel degre is 10 degres
         date[i+4]= 1 # making the i'st TIMESTAMP at one to say that it's the TIMESTAMP i.
         X =np.append(X, [date], axis=0) # Create the row with temperature and ensoleillement at 0
 

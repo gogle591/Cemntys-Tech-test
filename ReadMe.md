@@ -110,7 +110,7 @@ Il existe plusieurs algorithmes de machine learning et deep learning qui sont ca
 ### 3.2. Une première réalisation : 
 Une première réalisation a été faite avec le module Sickit Learn, une transformation des types a été réalisé également, dans le but d'optimiser le modèle de régression.
 Les variables choisis sont TIMETAMPS, température et ensoleillement, le résultat est le déplacement.
-Une fois notre algorithme est entraîné avec la fonction fit(), une création des information a produire a été nécessaire, la valeur de l'ensoleillement et de la température sont toujours a 0, on essaye donc de faire une prédication pour avoir les valeur de déplacement pour chaque jour en chaque pas de temps sans l'effet de l'ensoleillement et la température.
+Une fois notre algorithme est entraîné avec la fonction fit(), une création des information a produire a été nécessaire, la valeur de l'ensoleillement est toujours a 0 veux dire que y'a pas d'ensoliellement, par contre pour la température, il faut la mettre dans un degré considiré comme neutre, c'est a dire un degré qui n'a aucun effet sur le déplacement. On essaye donc de faire une prédication pour avoir les valeur de déplacement pour chaque jour en chaque pas de temps sans l'effet de l'ensoleillement et la température.
 
 
 ## 4. Enregisrement des résultat : 
